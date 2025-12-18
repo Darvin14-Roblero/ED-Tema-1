@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/22"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.darvinsystems.metodosdebusqueda1.controller.MainController">
+
+    <children>
+        <Label layoutX="210.0" layoutY="22.0" text="Método de Búsqueda">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="40.0" layoutY="90.0" text="Cantidad de elementos" />
+        <TextField fx:id="txtCantidad" layoutX="200.0" layoutY="86.0" />
+
+        <Label layoutX="40.0" layoutY="135.0" text="Ingresa los elementos ( , )" />
+        <TextField fx:id="txtElementos" layoutX="200.0" layoutY="131.0" />
+
+        <Label layoutX="40.0" layoutY="180.0" text="Número a buscar" />
+        <TextField fx:id="txtBuscar" layoutX="200.0" layoutY="176.0" />
+
+        <ListView fx:id="listViewResultado"
+                  layoutX="380.0" layoutY="70.0"
+                  prefHeight="210.0" prefWidth="200.0" />
+
+        <Button layoutX="170.0" layoutY="320.0"
+                text="Ingresar"
+                onAction="#OnIngresar" />
+
+        <Button layoutX="260.0" layoutY="320.0"
+                text="Buscar"
+                onAction="#OnBuscar" />
+
+        <Label fx:id="lblMensaje"
+               layoutX="40.0" layoutY="230.0"
+               prefHeight="60.0" prefWidth="320.0" />
+    </children>
+</AnchorPane>
